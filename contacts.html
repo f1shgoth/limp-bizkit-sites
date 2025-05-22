@@ -1,0 +1,86 @@
+<html>
+<head>
+  <style>
+    body {
+      background-color: #000;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 40px;
+      color: white;
+      margin: 0;
+    }
+    img.logo {
+      width: 220px;
+      margin-bottom: 30px;
+    }
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 35px;
+      text-shadow: 1px 1px 5px #1DB954;
+    }
+    .btn-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+    button {
+      padding: 15px 25px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      color: white;
+      min-width: 160px;
+    }
+
+    button.spotify    { background-color: #1DB954; }
+    button.instagram  { background-color: #C13584; }
+    button.youtube    { background-color: #FF0000; }
+    button.tiktok     { background-color: #010101; border: 2px solid #fff; }
+    button.facebook   { background-color: #4267B2; }
+    button.twitter    { background-color: #1DA1F2; }
+    button.shop       { background-color: #ff6600; }
+
+    button:hover {
+      transform: scale(1.05);
+      opacity: 0.85;
+    }
+
+    .footer {
+      font-size: 1.1em;
+      background-color: #111;
+      display: inline-block;
+      padding: 15px 25px;
+      border-radius: 12px;
+      color: #ccc;
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Логотип -->
+  <img class="logo" src="https://limpbizkit.com/assets/img/lb-logo__loserville2.jpg" alt="Limp Bizkit Logo">
+
+  <h1>Контакти</h1>
+
+  <!-- Кнопки соцмереж -->
+  <div class="btn-container">
+    <button class="spotify"   onclick="window.open('https://open.spotify.com/artist/165ZgPlLkK7bf5bDoFc6Sb', '_blank')">Spotify</button>
+    <button class="instagram" onclick="window.open('https://www.instagram.com/limpbizkit/', '_blank')">Instagram</button>
+    <button class="youtube"   onclick="window.open('https://www.youtube.com/user/limpbizkit', '_blank')">YouTube</button>
+    <button class="tiktok"    onclick="window.open('https://www.tiktok.com/@limpbizkit', '_blank')">TikTok</button>
+    <button class="facebook"  onclick="window.open('https://www.facebook.com/limpbizkit', '_blank')">Facebook</button>
+    <button class="twitter"   onclick="window.open('https://twitter.com/limpbizkit', '_blank')">X (Twitter)</button>
+    <button class="shop"      onclick="window.open('https://limpbizkitmerch.com/', '_blank')">Магазин</button>
+  </div>
+
+  <div class="footer">
+    Підписуйся на Limp Bizkit, щоб не пропустити новини, концерти та ексклюзивний мерч!
+  </div>
+
+</body>
+</html>

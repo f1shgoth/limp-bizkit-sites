@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Limp Bizkit | Офіційний фан-сайт</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <style>
+    nav {
+      margin: 20px 0;
+      text-align: center;
+    }
+    nav button {
+      background-color: #222;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 8px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    nav button:hover {
+      background-color: #555;
+    }
+    header {
+      background-image: url('images/header-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 60px 20px;
+      color: white;
+      text-align: center;
+    }
+
+    /* Новий стиль для блоку з фотками і відео */
+    .media-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+    .carousel {
+      display: flex;
+      gap: 15px;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      max-width: 700px;
+      scrollbar-width: thin;
+    }
+    .carousel img {
+      height: 180px;
+      border-radius: 10px;
+      flex-shrink: 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .carousel img:hover {
+      transform: scale(1.05);
+    }
+    video {
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+
+    details {
+      max-width: 700px;
+      margin: 0 auto 40px;
+      font-size: 1.1em;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+ <nav>
+  <ul>
+    <li><a href="index.html">Головна</a></li>
+    <li><a href="about.html">Про гурт</a></li>
+    <li><a href="discography.html">Дискографія</a></li>
+    <li><a href="media.html">Медіа</a></li>
+    <li><a href="contacts.html">Контакти</a></li>
+    <li><a href="interviews.html">Інтерв’ю та Цитати</a></li>  <!-- Ось новий пункт -->
+  </ul>
+</nav>
+
+
+  <header>
+    <h1>Limp Bizkit</h1>
+    <p>Найбрутальніший ню-метал у світі</p>
+  </header>
+
+  <div class="media-container">
+    <section class="carousel" aria-label="Фото з концертів Limp Bizkit">
+      <img src="images/img1.jpg" alt="Фото концерту Limp Bizkit 1">
+      <img src="images/img2.jpg" alt="Фото концерту Limp Bizkit 2">
+      <img src="images/img3.jpg" alt="Фото концерту Limp Bizkit 3">
+    </section>
+
+  <div class="media-section">
+  <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/JTMVOzPPtiw" 
+    title="Limp Bizkit - Nookie Live" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>і
+  </iframe>
+  <div class="caption">Limp Bizkit — «Nookie» (Live)</div>
+</div>
+
+
+
+  <details>
+    <summary>Детальніше про стиль Limp Bizkit</summary>
+    <p>Limp Bizkit — це унікальний музичний колектив, який поєднує елементи репу, хард-року, ню-металу та альтернативного року. Їхній стиль вирізняється потужними гітарними рифами, агресивним вокалом Фреда Дерста та ритмічними хіп-хоп вставками. Гурт відомий своєю енергійною та бунтарською атмосферою на концертах, а також змішуванням жанрів, що створює вибуховий звук і приваблює різних слухачів — від рок-фанатів до прихильників хіп-хопу. Їхні пісні часто торкаються тем особистої боротьби, емоційного вираження та соціальних проблем.</p>
+  </details>
+
+  <script src="script.js"></script>
+</body>
+</html>
